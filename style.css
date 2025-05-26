@@ -1,0 +1,205 @@
+/*Aestrutura do css é composta: Pela identificação do elemento seguido de chaves, epor fim dentro das chaves você escolhe o atributo que deseja modificar seguido do parâmetro. 
+Ex: p{font-size:16px;
+color: red;}
+Sempre eu preciso terminar os comandos com ;*/ 
+/* Medidas Absolutas - ou seja fixas
+    px- pixels
+    cm - centímetros
+    mm - milímetros
+Medidas relativas - ou seja que se ajustam
+    rem -  se ajusta de acrodo com o tamanho da fonte hyml
+    % - relativo ao tamanho do elemento pai / tela
+;*/
+.ferias{
+    /*Alterando a largura da imagem;*/
+    width: 50%;
+    /*Alterando a altura da imagem;*/
+    height: 50%;
+    max-width: 600px;/*Limite de largura*/
+    height: auto;/*Manter a proporção*/
+    border-radius: 12px;/*Bordas arredondadas*/
+    margin: 10px 0px;/*Espaçamento acima e abaixo entre a imagem e o conteúdo*/
+}
+
+
+
+
+tr,td{
+    /*Definindo tipo e espessura da borda;*/
+    border: 1px solid;/*solid, dashed, dotted*/
+    /*definindo a cor da borda das linhas e colunas da tabela;*/
+    border-color: black;
+}
+td{
+    /*Ajustando a largura*/
+    width: 250px;
+}
+
+.linha1{
+    background-color: orange; /*Troca a cor de fundo*/
+    text-align: center; /*Alinha no centro*/
+    color: white;/*Troca a cor da linha*/
+}
+
+
+body{
+    background-image:linear-gradient(to bottom,#8CABFA,#AED4F9,#B4D6FA,#BAAF9B,#FAE0B3, #FAC27D); /*Criamos um gradiente para a página web. Formas de aplicação rigth, left, top*/
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+     color: #333;/*Define a cor do texto*/
+    line-height: 1.6;/*Define o espaçamento entre as linhas*/
+    padding: 20px;/*Espaçamento interno nas bordas*/
+}
+/*Estilos do título principal da página*/
+h1{
+    text-align: center;/*Centraliza o texto*/
+    color: #2c106ee6;/*Aplica cor laranja*/
+    font-size: 3rem;/*Altera o tamanho*/
+    margin-bottom: 30px;/*Espaçamento externo abaixo do título*/
+}
+/*Estilos para os subtítulos h3 e h4*/
+h3,h4{
+    color: #01021d;
+    margin-top: 30px;
+}
+p{
+    font-size: 18px;
+}
+/*Estilizando os links*/
+a{
+    color: #08106b;/*Cor da letra/fonte*/
+    text-decoration: none;/*Remove o traçado do link*/
+}
+/*Evento hover nos links*/
+a:hover{
+    text-decoration: underline;/*Adiciona um traço abaixo do link quando o mouse estiver sobre ele*/
+}
+/*Estilizar todas as listas (ol, li)
+cor de fundo, espaço interno, arredondar as bordas*/
+ul,ol{
+    font-size: 18px;
+    line-height: 1.6;
+    background-color: #ffffff11;/*Fundo branco*/ 
+    padding: 30px;/*Espacamento interno*/
+    border-radius: 12px;/*Arredondamento das bordas*/
+}
+/*Estilo da tabela*/
+table{
+    width: 100%;/*Ocupa 100% da largura do elemento ao qual ela está inserida (container)*/
+    border-collapse:collapse;/*Juntar as bordas da tabela*/
+    margin-top: 20px;/*Espaço acima da tabela*/
+}
+table td{
+    border: 1px solid #333;/*Borda de 1 pixel de largura, linha contínua e cor*/
+    /*espaçamento interno, alinhar o texto no centro e atribuir uma cor e fundo*/
+    padding: 12px;/*Espaçamento interno*/
+    text-align: center;/*Alinhar o texto no centro*/
+    background-color: #cad02550; /*Atribui uma cor de fundo*/
+}
+/*Estilizando os cards*/
+/* Container que segura todos os cards */
+.container-cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px; /* Espaçamento entre os cards */
+}
+
+/* Estilização dos cards */
+.card {
+    background-color: #ffffff;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    width: 300px;
+    overflow: hidden;
+    transition: transform 0.3s ease;
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+/* Estilização da imagem */
+.card-img-top {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+/* Conteúdo interno */
+.card-body {
+    padding: 15px;
+}
+
+.card-title {
+    font-size: 1.5rem;
+    color: #009688;
+    margin-bottom: 10px;
+}
+
+.card-text {
+    font-size: 1rem;
+    color: #444;
+    margin-bottom: 15px;
+}
+
+/* Botão */
+.btn-primary {
+    background-color: #009688;
+    color: white;
+    padding: 10px 16px;
+    border-radius: 8px;
+    text-align: center;
+    display: inline-block;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.btn-primary:hover {
+    background-color: #00796B;
+}
+/*Responsividade*/
+/*Telas pequenas*/
+@media(max-width:768px){
+    .card{
+        width: 50%;
+        margin: 20px auto;
+    }
+
+p{
+    font-size: 21px;
+}
+li{
+    font-size: 19px;
+}
+
+}
+/* ==== MENU HORIZONTAL ==== */
+nav {
+    background-color: #252b7452;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0;
+}
+
+nav ul li a {
+    display: block;
+    padding: 14px 20px;
+    color: rgb(181, 206, 243);
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+nav ul li a:hover {
+    background-color: #4d8cc775;
+    border-radius: 5px;
+}

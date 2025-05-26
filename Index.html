@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>⛱🌞Praias do Brasil</title>
+    <!--Conectando o CSS ao HTML. Permitindo que o navegador interprete e aplique as regras de formatação definidas no css aos elementos HTML.-->
+    <link rel="stylesheet" href="style.css"> 
+    <!-- Importa o arquivo CSS do Bootstrap versão 4.5.2 para aplicar estilos prontos de layout, botões, carrossel, etc. -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <!-- Importa a biblioteca jQuery (versão leve/slim), necessária para o funcionamento de componentes interativos do Bootstrap -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+
+    <!-- Importa o Popper.js, uma biblioteca que ajuda no posicionamento correto de elementos como menus dropdown e tooltips no Bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+
+    <!-- Importa o JavaScript do Bootstrap versão 4.5.2, que ativa os componentes interativos como carrossel, modal, botão colapsável etc. -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</head>
+<body>
+    <!--Criando o menu interativo-->
+    <nav><!--Organiza todos os elementos do menu, centralizando em um só lugar-->
+        <ul>
+            <li><a href="#Praia_de_Maresias">Praia de Maresias</a></li>
+            <li><a href="#Praia_Central_SC">Praia central SC</a></li>
+            <li><a href="#Praia_do_Farol_da_Barra_BA">Praia do Farol da Barra</a></li>
+            <li><a href="#Praia_Maragogi">Praia de Maragogi</a></li>
+            <li><a href="#Praia_de_Ipanema_RJ">Praia de Ipanema RJ</a></li>
+            <li><a href="#Cuidados_no_verao">Cuidados no verão</a></li>
+            <li><a href="#Dicas_para_nao_perder_criancas_na_praia">Crianças</a></li>
+            <li><a href="#Pensando_em_viajar?">Desconto</a></li>
+            <li><a href="#Veja_também">Confira</a></li>
+        </ul>
+    </nav>
+    <h1>Praias do Brasil</h1>
+    <center>
+    <div id="carrossel-Slides" class="carousel slide" data-ride="carousel" data-interval="3000">
+        <!--Conter todos os slides, e o que  determina isso é o atributo carousel-inner-->
+        <div class="carousel-inner">
+            <!--As div's que de fato contém as imagens, atributo active determina qual será a imagem que será exibida primeiro-->
+            <div class="carousel-item active">
+                <img class="d-block w-100" src="cenario-hipnotizante-de-uma-paisagem-maritima-com-uma-natureza-exuberante-durante-o-dia.jpg" style="height:600px;" style="width: 80%;" alt="">
+            </div>
+            <!--Atributo carousel-item define cada slides individualmente-->
+            <div class="carousel-item">
+                <img class="d-block w-100" src="bela-praia-tropical-mar-e-mar-com-palmeira-de-coco-na-hora-nascer-sol.jpg" style="height:600px;" style="width: 80%;" alt="">
+            </div>
+            <div class="carousel-item">
+                <img class="d-block w-100" src="vista-fascinante-litoral-com-areia-branca-e-aguas-cristalinas-turquesa-na-indonesia.jpg" style="height:600px;" style="width: 80%;" alt="">
+            </div>
+            <div class="carousel-item">
+                <img class="d-block w-100" src="praia-caribenha-com-palmeiras-e-ceu-azul.jpg" style="height:600px;" style="width: 80%;" alt="">
+            </div>
+        </div>
+        <a class="carousel-control-prev" href="#carrossel-Slides" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Anterior</span>
+        </a>
+        <!-- Botão Próximo -->
+        <!-- Ícone de seta da direita -->
+        <a class="carousel-control-next" href="#carrossel-Slides" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Próximo</span>
+        </a>
+    </div>
+    </center>
+   <section id="Praia_de_Maresias">
+    <h3>Maresiais - SP</h3>
+    <img class="ferias" src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/cf/Sunny_Saturday.jpg/960px-Sunny_Saturday.jpg" alt="Imagem da Praia de Maresias">
+    <p>A Praia de Maresias é uma das praias mais famosas e visitadas do litoral norte de São Paulo, localizada no município de São Sebastião. Com suas águas claras, ondas fortes e beleza natural, a praia atrai turistas de todo o Brasil e até de fora. Além da sua beleza paradisíaca, Maresias possui diversos pontos turísticos e atividades para os visitantes.</p>
+    <h4>Atividades recomendadas em Maresias</h4>
+    <ul>
+        <li>Passeios de barco</li>
+        <li>Mergulho e surfe</li>
+        <li>Gastronomia local</li>
+        <li>Visitar a Igreja de São Sebastião</li>
+    </ul>
+    <h4>Restaurantes mais recomendados</h4>
+    <ol>
+        <li>Nossa primeira recomendação é para esse excelente restaurante para quem gosta dos mehores pratos  <a href="https://www.restauranteravenala.com.br/menu" target="_blank">Ravenala</a>, é um restaurante bem avaliado pelo seu otimo atedimento e seus pratos sofisticados.</li>
+        <li>Nossa segunda recomendação é para quem é amante dos frutos do mar <a href="https://restaurantebadaue.com.br/" target="_blank">Badaue</a>,a mais alta gastronômia caiçara, com peixes e frutos do mar frescos e saborosos, vindos diretamente de peixaria exclusiva, garantindo sempre a qualidade dos pratos</li>
+        <li>Não poderimos deixar de falar nesse restaurante excelente que serve pratos empanados tipicos da Argentina <a href="https://empanadastucumanas.com/" target="_blank">Empanadas Tucumanas</a>, é reconhecida pela produção de deliciosas empanadas artesanais.</li>
+    </ol>
+   </section> 
+   <section id="Praia_Central_SC">
+    <h3>Praia Central - SC</h3>
+    <img class="ferias" src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/59/Balne%C3%A1rio_Cambori%C3%BA_from_Unipraias_Park_2023-04-02.jpg/1024px-Balne%C3%A1rio_Cambori%C3%BA_from_Unipraias_Park_2023-04-02.jpg" alt="Imagem da Praia Central em Balneário Camboriú">
+    <p>A Praia Central é a principal de Balneário Camboriú, em Santa Catarina, sendo um dos destinos turísticos mais procurados da cidade. Conhecida por sua beleza exuberante, é também um polo de vida noturna vibrante, atraindo visitantes de todo o Brasil, especialmente durante o Réveillon, quando se torna um dos principais pontos de celebração do ano.</p>
+    <h4>Atividades recomendadas em Balneário</h4>
+    <ul>
+        <li>Visitar o Parque Unipraias, onde há um teleférico que leva ao Morro da Aguada.</li>
+        <li>Passear no Deck do Pontal Norte </li>
+        <li>Passeios de barco</li>
+        <li>Mergulho e surfe</li>
+        <li>Caminhar ou praticar esportes</li>
+        <li>Visitar a Loja Casa do Turista</li>
+    </ul>
+    <h4>Restaurantes mais recomendados</h4>
+    <ol>
+        <li>É um restaurante muito bem avaliado, segue o estilo tradicional de uma temakeria com uma proposta inspirada na cultura clássica japonesa <a href="https://www.temakiart.com.br/" target="_blank">Temakiart</a>, é uma otima opção para um belo jantar.</li>
+        <li>É um restaurante amplo com opção de espaço aberto, excelentes pratos e porções e considerado por muitos a melhor pizza de Balneário <a href="https://livemenu.app/menu/646cf231027891005534d311" target="_blank">Distretto Bar e Trattoria</a>, é um conceituado restaurante de comida italiana.</li>
+        <li>Ambiente bom e gostoso, com happy hour das 17h até as 20h, ainda conta com varanda ao ar livre em frente para o mar.<a href="https://www.restaurantemadero.com.br/pt/restaurante/sc/balneario-camboriu/madero-steak-house-av-atlantica-pt" target="_blank">Madero Steak House</a>, é reconhecido também pelo seu excelente hamburger.</li>
+    </ol>
+   </section>
+   <section id="Praia_do_Farol_da_Barra_BA">
+    <h3>Praia do Farol da Barra - BA </h3>
+    <img class="ferias" src="https://donaviagem.com/wp-content/uploads/2023/06/Farol-da-Barra-Salvador-Bahia-Dona-Viagem.webp" alt="Imagem da Praia do Farol da Barra">
+    <p>A Praia do Farol da Barra é uma praia de Salvador, na Bahia, banhada pelo Atlântico. É um local turístico imperdível que abriga o Farol da Barra, um cartão postal da cidade.</p>
+    <h4>Atividades recomendadas na Praia do Farol da Barra</h4>
+    <ul>
+      <li>Relaxar no beach club</li>
+      <li>Visitar as piscinas naturais na maré baixa  </li>
+      <li>O canto esquerdo da praia é propício para surfe  </li>
+      <li>Visitar o Museu Náutico da Bahia</li>
+      <li>Apreciar o pôr do sol</li>
+      <li>Curtir a vista para a Baía de Todos os Santos</li>
+    </ul>
+    <h4>Restaurantes mais recomendados</h4>
+    <ol>
+        <li>Restaurante Suíço-Brasileiro com mesas no calçadão do Porto da Barra. Vista Mar. Cozinha Internacional e Bahiana. Moquecas e Röstis, a famosa Batata Suíça. <a href="https://reconcavoculinaria.strelo.com.br/" target="_blank"> Recôncavo Culinária Bar E Restaurante</a>, além da culinária regional e contemporânea, tem uma variedade de drinks autorais e cervejas artesanais.</li>
+        <li>É um restaurante amplo com opção de espaço aberto, excelentes pratos e porções e considerado por muitos a melhor pizza de Balneário <a href="https://restaurante-tudo-azul.goomer.app/"_blank">Restaurante Tudo Azul</a>, tem um amplo cardápio com batata suíça, peixes, frutos do mar, cerveja gelada, em clima animado frente à praia.</li>
+        <li>Pratos regionais preparados com frutos do mar e carnes, além de drinks e cerveja, em um restaurante à beira-mar.<a href="https://restaurantebarravento.com.br/bv/" target="_blank">Barravento</a>,se tornou um cartão postal da cidade de Salvador.</li>
+    </ol>
+   </section>
+   <section id="Praia_Maragogi">
+    <h3>Praia Maragogi - AL</h3>
+    <img class="ferias" src="https://www.pontaldomaragogi.com.br/wp-content/uploads/2016/05/8-A-1.jpg" alt="Imagem da Praia de Maragogi">
+    <p>A Praia de Maragogi é uma praia localizada no centro da cidade de Maragogi, Alagoas. É um dos principais destinos turísticos do Brasil, conhecida como o "Caribe brasileiro.</p> 
+    <h4>Atividades recomendadas na Praia de Maragogi</h4>
+    <ul>
+        <li>Visitar as piscinas naturais</li>
+        <li>Mergulhar com cilindro nas piscinas naturais  </li>
+        <li>Fazer banana boat, windsurfe, caiaque e stand-up paddle</li>
+        <li>Conhecer o litoral da região e várias de suas praias e pontos de interesse</li>
+        <li>Visitar o Mirante de Maragogi</li>
+        <li>Visitar o sítio arqueológico</li>   
+    </ul>
+    <h4>Restaurantes mais recomendados</h4>
+    <ol>
+        <li><a href="casadapraiarestaurante.com.br" target="_blank"> Casa da Praia Lounge e Pizzaria</a> é um restaurante que proporciona um ambiente aconchegante, descontraído, com boa música, excelente culinária, um variado cardápio de bebidas para você apreciar bons drinques e cervejas especiais</li>
+        <li> O <a href="https://www.merakibeach.com.br/" target="_blank">Meraki Beach</a> é pousada, bar e restaurante num só lugar, a beleza do lugar, aliada à boa gastronomia e ao ambiente aconchegante e alto astral, fazem do Meraki Beach o lugar ideal para passar o dia em família, curtir com amigos ou desfrutar de maravilhosos momentos a dois</li>
+        <li>Tem uma deliciosa cozinha combinando o artesanal com o contemporâneo num espaço despojado. Disponibiliza uma exposição de arte permanente de fotos de Juan Manuel Loureiro e Evaldo Parreira e grafite do Dan Roots nas paredes criando uma atmosfera agradável para família, amigos e namorados. <a href="https://www.russogastrobar.com.br/" target="_blank">Russo Gastrobar</a> Faz com que tenhamos uma experiência diferenciada em Alagoas.</li>
+    </ol>
+   </section>
+   <section id="Praia_de_Ipanema_RJ">
+    <h3>Praia de Ipanema - RJ </h3>
+    <img class="ferias" src="https://rio.temporadacopacabana.com.br/wp-content/uploads/2021/01/praia-de-ipanema-61-751x430.jpg" alt="Imagem da Praia de Ipanema">
+    <p>A Praia de Ipanema é uma praia famosa do Rio de Janeiro, localizada na Zona Sul, entre os bairros do Leblon e Arpoador. É um dos cartões-postais da cidade e uma das praias mais bonitas do mundo. </p>
+    <h4>Atividades recomendadas na Praia de Ipanema</h4>
+    <ul>
+        <li>Curtir o mar e a areia</li>
+        <li>Praticar esportes como vôlei, futevôlei e surf </li>
+        <li>Visitar a Feira Hippie </li>
+        <li>Conhecer o Mirante da Paz</li>
+        <li>Visitar o Parque Garota de Ipanema</li>
+        <li>Ver a Estátua de Tom Jobim</li>
+    </ul>
+    <h4>Restaurantes mais recomendados</h4>
+    <ol>
+        <li><a href="nossoipanema.com" target="_blank"> Nosso</a> É um restaurante e bar completo, comida contemporânea pelas mãos do Chef Bruno Katz e bar completo chefiado por Daniel Estevan, além disso serve pratos para happy hour, serve ótimos coquetéis e a presença de cães é permitida.</li>
+        <li> <a href="https://churrasqueirajf.com.br/"_blank">Churrasqueira</a>,É um restaurante com variedade de cortes de carnes e diversas opções de acompanhamentos. Conta com otima localização em Ipanema, ambiente novo, moderno, bem decorado, possui espaço kids tornando o ambiente perfeito para uma refeição em familia.</li>
+        <li> Degustação e harmonização o <a href="https://maguje.com/" target="_blank">Maguje</a> Tem na culinária inspiração livre. É afetiva, artesanal, descomplicada e curiosa. É gastronomia para saborear o novo, compartilhar com amigos e também para quem adora uma releitura dos grandes clássicos da cozinha.</li>
+    </ol>
+   </section>
+   <section id="Cuidados_no_verao">
+    <h3>Cuidados no verão</h3>
+    <img class="ferias" src="https://www.ilhabela.com.br/wp-content/uploads/2018/11/dicas-de-verao-protetor-solar-pim-02.jpg" alt="Protetor solar, Oculos, chapéu">
+    <p>
+        <ul>
+            <li>Fique longe do limão</li>
+            <li>Abuse do protetor solar (e de roupas com fotoproteção)</li>
+            <li>Tenha cuidado com a alimentação</li>
+            <li>Evite nadar logo após comer</li>
+            <li>Não fique muito tempo com roupa de banho molhada </li>
+            <li>Não esqueça de proteger os olhos </li>
+            <li> Cuidado com a bebida alcoólica em excesso </li>
+            <li>Não esqueça de beber água</li>
+        </ul>
+    </p>
+   </section>
+   <section id="Dicas_para_nao_perder_criancas_na_praia">
+    <h3>Dicas para não perder crianças na praia</h3>
+    <h4>Em praias movimentadas, é essencial ficar atento às crianças. Algumas dicas incluem estabelecer um ponto de encontro, identificar as crianças com pulseiras.</h4>
+    <img class="ferias" src="https://img.freepik.com/fotos-gratis/tiro-completo-criancas-brincando-com-brinquedos_23-2149631526.jpg?t=st=1743874115~exp=1743877715~hmac=823da93ab3490e6dd07992716758404173f98cdf1333cfa7e4027c5ad5e7fc66&w=740" alt="Crianças brincando na praia">
+    <h3>8 Dicas</h3>
+    <p><ul><ol>
+        <li>Mantenha um ponto de encontro definido</li>
+        <li>Use pulseiras de identificação nas crianças</li>
+        <li> Ensine às crianças seus nomes completos e números de telefone</li>
+        <li>Esteja atento à localização das salva-vidas</li>
+        <li>Evite praias muito movimentadas </li>
+        <li>Incentive as crianças a não se afastarem muito. </li>
+        <li> Use uma barraca ou guarda-sol colorido como ponto de referência </li>
+        <li>Esteja ciente dos arredores e identifique pontos de referência fixos</li>
+    </ol></ul></p>
+   </section>
+   <section id="Pensando_em_viajar?">
+    <h3>Pensando em viajar?</h3>
+    <p>Então veja nossas recomendações e aproveite o nosso cupom de desconto.</p>
+    <table>
+        <tr>
+            <td class="linha1">Companhia de viagem</td>
+            <td class="linha1">Acesse o site</td>
+            <td class="linha1">Aproveite nosso cupom</td>
+        </tr>
+        <tr>
+            <td>CVC</td>
+            <td><a href="https://www.cvc.com.br/"target=_blank>Acesse e confira os pacotes </a></td>
+            <td>PRAIAS10</td>
+        </tr>
+        <tr>
+            <td>Gol</td>
+            <td><a href="https://www.voegol.com.br/"target=_blank>Acesse e confira os pacotes </a></td>
+            <td>PRAIAS10</td>
+        </tr>
+        <tr>
+            <td>Latam</td>
+            <td><!--Segunda coluna da segunda linha--> <a href="https://www.latamairlines.com/br/pt"target=_blank>Acesse e confira os pacotes </a></td>
+            <td>PRAIAS10</td>
+        </tr>
+    </table>
+   </section>
+   <section id="Veja_também">
+    <h3>Veja também</h3>
+     <div class="container-cards">
+        <div class="card" style="width:18rem;">
+            <img class="card-img-top" src="https://www.viagenscinematograficas.com.br/wp-content/uploads/2020/01/Piaui-Parnaiba-Praias-9.jpg" alt="Praia de Piaui" style="width:18rem;">
+            <div class="card-body">
+                <h5 class="card-title"> Praia de Piaui</h5>
+                <p class="card-text">A Praia de Piauí, localizada no litoral do estado do Piauí, é famosa por suas paisagens paradisíacas, dunas, mangues e águas calmas. Ela se destaca por ser uma das menores faixas litorâneas do Brasil, porém com belezas naturais incríveis.</p>
+                <a href="https://www.blumarturismo.com.br/blog/as-praias-mais-lindas-do-piaui/" class="btn-primary" >Visitar</a>
+            </div>
+        </div>
+        <div class="card" style="width:18rem;">
+            <img class="card-img-top" src="https://www.melhoresdestinos.com.br/wp-content/uploads/2020/06/melhores-praias-brasil-820x547.jpg" alt="Prainhas do Pontal do atalaia"style="width:18rem;">
+            <div class="card-body">
+                <h5 class="card-title">Prainhas do Pontal do Atalaia</h5>
+                <p class="card-text">As Prainhas do Pontal do Atalaia são consideradas uma das praias mais bonitas do Brasil. Conhecidas pela água cristalina, areia branquinha e mar calmo, são perfeitas para quem busca paisagens paradisíacas, mergulhos e momentos de relaxamento.</p>
+                <a href="https://www.smartriotour.com.br/pontal-do-atalaia-em-arraial-do-cabo/" class="btn-primary">Visitar</a>
+            </div>
+        </div>
+        <div class="card" style="width:18rem">
+            <img class="card-img-top" src="https://maresiasdoleme.com/wp-content/uploads/2023/04/Forte_de_Copacabana_panorama-scaled.jpg" alt="Praia de Copacabana- RJ" style="width:18rem">
+            <div class="card-body">
+                <h5 class="card-title">Praia de Copacabana</h5>
+                <p class="card-text">Uma das praias mais conhecidas do Brasil é um destino perfeio para os amantes de praia. É considerada uma das praias mais famosas do mundo</p>
+                <a href="https://guia.melhoresdestinos.com.br/praia-de-copacabana-4-9-l.html" class="btn-primary">Visitar</a>
+            </div>
+        </div>
+        <div class="card" style="width:18rem;">
+            <img class="card-img-top" src="https://www.jaraguaturismo.com/wp-content/uploads/2024/05/Porto-de-Galinhas.jpg" alt="Porto de Galinhas" style="width:18rem;">
+            <div class="card-body">
+                <h5 class="card-title">Porto de Galinhas</h5> 
+                <p class="card-text">Porto de Galinhas é um balneário no município de Ipojuca, Pernambuco, Brasil, famoso por suas praias de águas mornas e cristalinas. É um dos destinos de praia mais queridos do país.</p>
+                <a href="https://guia.melhoresdestinos.com.br/porto-de-galinhas.html" class="btn-primary">Visitar</a>
+            </div>
+            </div>
+        </div>
+                <H3 class="card=title">Calcule sua viagem</H3>
+                <a href="https://hionaramiranda.github.io/ProjetoCalculadora/" class="btn-primary">Calculadora</a>
+            </div>
+         </section>   
+        
+   </section>
+</body>
+</html>
